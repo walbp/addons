@@ -26,3 +26,26 @@ https://gitcode.com/waxgourd/addons
 
 可以充当轻量级NAS的samba，与一般的samba区别在于，可以在挂载硬盘，可以配置支持网卡。
 
+&#10003;  [NeteaseCloudMusicApi](NeteaseCloudMusicApi/) : 
+
+网易云音乐 Node.js API service。
+
+&#10003;  [filebrowser](filebrowser/) : 
+
+filebrowser提供指定目录下的文件管理界面，可用于上传、删除、预览、重命名和编辑文件。
+
+&#10003;  [nextcloud](nextcloud/) : 
+
+nextcloud个人专属或团队共享的私有云同步网盘 。
+
+&#10003;  [emby](emby/) : 
+
+emby是一款个人媒体服务器，几乎在所有设备上都有应用程序。
+
+&#10003;  [MyIP](MyIP/) : 
+
+MyIP一个更好的 IP 工具箱。可以查看IP、IP 信息（代理前后）、检查 DNS 泄露、检查 WebRTC 连接、网速测试、测试网站可用性等。
+
+&#10003;  [Zigbee2MQTT](zigbee2mqtt/) : 
+
+官方Zigbee2MQTT家庭助理插件
