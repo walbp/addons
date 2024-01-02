@@ -20,8 +20,9 @@ If you use clients for file syncing, the use of SQLite is highly discouraged.
 
 解决这个问题，请遵循以下步骤:
 
-- 1. 安装 `mariadb` ，随机填写信息配置然后启动。为了在网络中能够被“nextcloud”找到，成功启动它很重要。
-- 2. 安装' nextcloud '插件(或者如果你已经安装了，重新启动它)，观察日志，直到你会注意到以下'警告':
+- 1、安装 `mariadb` ，随机填写信息配置然后启动。为了在网络中能够被“nextcloud”找到，成功启动它很重要。
+
+- 2、安装' nextcloud '插件(或者如果你已经安装了，重新启动它)，观察日志，直到你会注意到以下'警告':
 
   ```bash
   WARNING: MariaDB addon was found! It can't be configured automatically due to the way Nextcloud works, but you can configure it manually when running the web UI for the first time using those values :
@@ -31,8 +32,9 @@ If you use clients for file syncing, the use of SQLite is highly discouraged.
   Host-name : core-mariadb:3306
   ```
 
-- 3. 回到“mariadb”附加组件，用上面的凭据配置它并重新启动它。确保插件正在创建“netxcloud”数据库。G
-- 4. 进入web并填写所有必需的信息。下面是一个例子:
+- 3、回到“mariadb”附加组件，用上面的凭据配置它并重新启动它。确保插件正在创建“netxcloud”数据库。
 
-![image](./images/nextcloud-1.png)
+- 4、进入web并填写所有必需的信息。下面是一个例子:
+
+![image](https://raw.gitcode.com/waxgourd/addons/files/master/nextcloud/images/nextcloud-1.png)
 
