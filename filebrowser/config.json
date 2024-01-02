@@ -79,6 +79,7 @@
   "options": {
     "NoAuth": true,
     "certfile": "fullchain.pem",
+    "disable_thumbnails": true,
     "keyfile": "privkey.pem",
     "ssl": false
   },
@@ -98,16 +99,16 @@
     "base_folder": "str?",
     "certfile": "str",
     "cifsdomain": "str?",
-    "cifsusername": "str?",
     "cifspassword": "str?",
+    "cifsusername": "str?",
+    "disable_thumbnails": "bool?",
     "keyfile": "str",
     "localdisks": "str?",
     "networkdisks": "str?",
-    "smbv1": "bool?",
     "ssl": "bool"
   },
   "slug": "filebrowser",
   "udev": true,
   "url": "https://github.com/alexbelgium/hassio-addons",
-  "version": "2.23.0_8"
+  "version": "2.23.0_10"
 }

@@ -31,9 +31,9 @@ configuration:
     name: networkdisks
     description: >-
       optional, list of smbv2/3 servers to mount, separated by commas
-  smbv1:
-    name: smbv1
+  disable_thumbnails:
+    name: disable_thumbnails
     description: >-
-      Should smbv1 be used instead of 2.1+?
+      true/false (set disable_thumbnails to true or false ; default true for speed)
   ssl:
     name: ssl

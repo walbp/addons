@@ -31,9 +31,9 @@ configuration:
     name: 网络磁盘
     description: >-
       可选，要挂载的smbv2/3服务器列表，以逗号分隔
-  smbv1:
-    name: smbv1
+  disable_thumbnails:
+    name: 禁用缩略图
     description: >-
-      默认smbv2，启用smbv1？
+      True /false(设置禁用缩略图为True或false;速度默认为true)
   ssl:
     name: ssl

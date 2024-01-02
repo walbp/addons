@@ -39,9 +39,9 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可选，要挂载的smbv2/3服务器列表，以逗号分隔。
 
-### smbv1：
+### 禁用缩略图：
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;默认smbv2，这里选择是否启用smbv1支持。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;True /false(设置禁用缩略图为True或false;速度默认为true)。
 
 ### ssl：
 
