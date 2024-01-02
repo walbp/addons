@@ -128,9 +128,7 @@ options:
     - fc00::/7
   interfaces: 
     - end0
-    - eth0
-    - wlan0
-    - virtbr0
+    - enp2s1
 schema:
   username: str
   password: password

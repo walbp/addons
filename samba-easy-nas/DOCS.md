@@ -25,9 +25,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;允许那些IP地址或IP段可以访问本服务。非特殊需求可不做修改。
 
 ### 网络适配器：
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用于绑定特定的网络适配器，如虚拟网络适配器较多的情况下在访问不到本服务，则可以调整一下网卡的先后次序。
+​      这里填写samba使用的网络适配器，x86一般为enp2s1，其他的end0，最好net info命令查看一下。
 
 ### 本地存储器：
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;挂载的本地存储器的路径，可根据个人需求更改。 支持文件系统“NTFS、FAT32、FAT16、EXT3、EXT4“等。
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;挂载的本地存储器(填写sda1或sdb1)，查看host主机中挂载的盘位于/dev。 支持文件系统”FAT32、FAT16、EXT3、EXT4“等。
 
