@@ -65,3 +65,7 @@ HA中有名的播放器
 &#10003;  [mi-scale](mi-scale/) : 
 
 小米体脂称插件
+
+&#10003;  [haos_turbo](haos_turbo/) : 
+
+HA加速器
