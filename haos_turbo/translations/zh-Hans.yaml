@@ -3,21 +3,21 @@ configuration:
   bin_app:
     name: 使用后台服务
     description: >-
-      选择后台服务是 v2ray-core 还是 xray-core.
+      选择后台服务是 v2r ay-core 还是 xr ay-core.
   tun_config:
     name: 配置版本
     description: >-
       使用配置文件的版本. 目前v1的兼容性较好.
   proxy_domains:
-    name: 加速域名
+    name: 升速域名
     description: >-
-      需要加速的域名列表
+      需要升速的域名列表
   direct_domains:
     name: 直连域名
     description: >-
       选择直连的域名列表
   proxy_ipcidr:
-    name: 加速IP(CIDR)
+    name: 升速IP(CIDR)
     description: >-
       加速的IP地址(支持CIDR)
   direct_ipcidr:

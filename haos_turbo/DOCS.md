@@ -1,6 +1,6 @@
 # Haos Turbo
 
-有Web GUI加速器客户端
+有Web GUI升速器客户端
 
 
 
@@ -15,17 +15,17 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;使用配置文件的版本. 目前v1的兼容性较好。
 
-### 加速域名:
+### 升速域名:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(选项)加速的域名列表。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(选项)升速的域名列表。
 
 ### 直连域名：
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(选项)直连的域名列表。
 
-### 加速IP(CIDR)：
+### 升速IP(CIDR)：
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(选项)加速的IP地址(支持CIDR)。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(选项)升速的IP地址(支持CIDR)。
 
 ### 直连IP(CIDR)：
 
