@@ -1,4 +1,4 @@
-# 冬瓜甄选addons: Haos Turbo  (HA加速)
+# 冬瓜甄选addons: Haos加速
 
 
 

@@ -1,3 +1,11 @@
+### 2.23.0_12 (08-01-2024)
+- 修复了一些小的bug
+- 修正: https://github.com/alexbelgium/hassio-addons/issues/1163
+
+### 2.23.0_11 (05-01-2024)
+- 修复了一些小的bug
+- 修复:检查https的状态(感谢@encryptix) https://github.com/alexbelgium/hassio-addons/issues/1155
+
 ### 2.23.0_10 (30-12-2023)
 - 修复了一些小的bug
 - 修正:正确的缓存缩略图创建
