@@ -48,19 +48,19 @@ MyIP一个更好的 IP 工具箱。可以查看IP、IP 信息（代理前后）�
 
 &#10003;  [Zigbee2MQTT](zigbee2mqtt/) : 
 
-官方Zigbee2MQTT家庭助理插件
+官方Zigbee2MQTT家庭助理插件。
 
 &#10003;  [portainer](portainer/) : 
 
-比较流行的docker管理工具
+比较流行的docker管理工具。
 
 &#10003;  [MPD](mpd/) : 
 
-HA中有名的播放器
+HA中有名的播放器。
 
 &#10003;  [ddnsto](ddnsto/) : 
 
-优秀的外网访问内网的插件
+优秀的外网访问内网的插件。
 
 &#10003;  [mi-scale](mi-scale/) : 
 
@@ -69,3 +69,14 @@ HA中有名的播放器
 &#10003;  [haos_turbo](haos_turbo/) : 
 
 HA加速器
+
+&#10003;  [青龙面板 for HA](qinglong/) : 
+
+定时任务管理平台
+
+&#10003;  [alist](alist/) : 
+
+AList是一个支持多种存储，支持网页浏览和 WebDAV 的文件列表程序，由 gin 和 Solidjs 驱动。
+
+&#10003;  [HA健康检测](boost/) : 
+这是一款HAOS综合网络访问健康度检查的应用，具有运行状态、网络状态、网络响应检测等功能。
