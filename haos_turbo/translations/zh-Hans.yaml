@@ -32,3 +32,7 @@ configuration:
     name: 清除用户数据
     description: >-
       每次启动自动清除所有的用户数据（注意：卸载插件，用户数据不会删除）
+  dns_parsing:
+    name: DNS解析模式
+    description: >-
+      DNS解析模式

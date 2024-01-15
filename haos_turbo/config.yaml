@@ -1,5 +1,5 @@
 ---
-version: v2.2.4.6-2
+version: v2.2.4.6-3
 slug: haos_turbo
 name: HAOS加速器
 description: Home Assistant系统加速器
@@ -37,6 +37,7 @@ devicetree: false
 options:
   bin_app: v2ray-core
   tun_config: v1
+  dns_parsing: direct
   proxy_domains: []
   direct_domains: []
   proxy_ipcidr: []
@@ -46,6 +47,7 @@ options:
 schema:
   bin_app: list(v2ray-core|xray-core)
   tun_config: list(v1|v2)
+  dns_parsing: list(direct|doh)
   proxy_domains:
     - str?
   direct_domains:

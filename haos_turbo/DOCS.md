@@ -38,3 +38,7 @@
 ### 清除用户数据：
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 每次启动自动清除所有的用户数据（注意：卸载插件，用户数据不会删除）
+
+### DNS解析模式：
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 这里设置DNS解析模式。
