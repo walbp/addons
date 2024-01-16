@@ -16,6 +16,6 @@ ingress: true
 ingress_port: 8966
 ingress_stream: true
 startup: services
-image: docker.nju.edu.cn/jason5ng32/myip
+image: jason5ng32/myip
 ports:
   8966/tcp: 8966

@@ -70,5 +70,5 @@
       "rtscts": "bool?"
     }
   },
-  "image": "docker.nju.edu.cn/zigbee2mqtt/zigbee2mqtt-{arch}"
+  "image": "zigbee2mqtt/zigbee2mqtt-{arch}"
 }
