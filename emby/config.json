@@ -36,6 +36,7 @@
     "/dev/nvme",
     "/dev/nvme0n1p1",
     "/dev/nvme0n1p2",
+    "/dev/nvme0n1p3",
     "/dev/mmcblk",
     "/dev/fuse",
     "/dev/sda1",
@@ -114,6 +115,6 @@
   "slug": "emby_nas",
   "udev": true,
   "url": "https://gitcode.com/waxgourd/addons",
-  "version": "4.8.0.66",
+  "version": "4.8.0.67",
   "video": true
 }

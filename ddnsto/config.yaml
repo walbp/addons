@@ -1,6 +1,6 @@
 name: "DDNSTO"
 slug: ddnsto
-version: "3.0.5"
+version: "v3.0.6"
 description: "DDNSTO 是一款稳定、快速、简单易用的内网穿透工具"
 url: https://gitcode.com/waxgourd/addons
 # codenotary: wghaos@163.com
@@ -17,4 +17,4 @@ options:
 schema:
   user_token: match([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})
   device_id: list(0|1|2|3|4|5|6|7|8|9)
-image: "tomczhen/ddnsto-hassio-{arch}"
+image: "docker.nju.edu.cn/wghaos/ddnsto"

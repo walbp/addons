@@ -1,6 +1,6 @@
 ---
 name: 网易云音乐 API
-version: v4.14.0
+version: v4.14.1
 slug: cloud-music
 description: 网易云音乐 Node.js API service
 url: https://gitcode.com/waxgourd/addons
