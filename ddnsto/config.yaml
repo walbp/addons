@@ -3,7 +3,6 @@ slug: ddnsto
 version: "v3.0.6"
 description: "DDNSTO 是一款稳定、快速、简单易用的内网穿透工具"
 url: https://gitcode.com/waxgourd/addons
-# codenotary: wghaos@163.com
 startup: services
 init: false
 apparmor: false

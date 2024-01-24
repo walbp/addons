@@ -1,4 +1,3 @@
-## 2023-12-10
+### 1.0（2023-12-10）
 
-from https://github.com/jason5ng32/MyIP
-
+- 首次推出

@@ -1,4 +1,4 @@
-# 冬瓜甄选addons: emby
+# 冬瓜甄选addons：emby
 
 ## 关于
 

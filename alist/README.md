@@ -1,6 +1,4 @@
-# 冬瓜甄选addons: Alist
-
-
+# 冬瓜甄选addons：Alist
 
 ## 关于
 

@@ -1,4 +1,4 @@
-# H冬瓜甄选addons: Zigbee2MQTT
+# 冬瓜甄选addons：Zigbee2MQTT
 
 ## 关于
 

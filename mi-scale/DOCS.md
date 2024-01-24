@@ -1,4 +1,6 @@
-# 支持的电子秤
+# 小米体脂称
+
+## 支持的电子秤
 
 支持类型:
 Name | Model | Picture
@@ -7,68 +9,41 @@ Name | Model | Picture
 [Mi Body Composition Scale](https://www.mi.com/global/mi-body-composition-scale/) | XMTZC02HM | <img alt="Mi Scale" src="https://raw.githubusercontent.com/lolouk44/xiaomi_mi_scale/master/Screenshots/Mi_Body_Composition_Scale_Thumb.png" width="150">
 [Mi Body Composition Scale 2](https://c.mi.com/thread-2289389-1-0.html) | XMTZC05HM | <img alt="Mi Body Composition Scale 2" src="https://raw.githubusercontent.com/lolouk44/xiaomi_mi_scale/master/Screenshots/Mi_Body_Composition_Scale_2_Thumb.png" width="150">
 
-急着出，汉化后续调整！！！（冬瓜备注）
-
-# Setup
-
-1. Retrieve the scale's MAC address from the [Xiaomi Mi Fit app](https://play.google.com/store/apps/details?id=com.xiaomi.hm.health&hl=en&gl=US), or alternatively, you can also use the `bluetoothctl` tool on Linux and type `scan on` to scan for BLE devices (`sudo hcitool lescan` might also work). The device should be named `MIBFS` or similar.<br/>
-<img alt="Showing the MAC address in the Xiaomi Mi Fit app" src="https://raw.githubusercontent.com/lolouk44/xiaomi_mi_scale/master/Screenshots/MAC_Address.png" width="250">
-
-
-1. Open Home Assistant and navigate to the "Add-on Store". Click on the 3 dots (top right) and select "Repositories".
-2. Enter `https://github.com/lolouk44/hassio-addons` in the box and click on "Add".
-3. You should now see "Lolouk44 Add-Ons" at the bottom list.
-4. Click on "Xiaomi Mi Scale", then click "Install".
-5. Under the "Configuration" tab, change the settings appropriately (at least MQTT parameters, user properties, and MAC address), see [Parameters](#parameters).
-6. Start the Add-on.
-
-## Important:
-If using the Add-On outside of Home Assistant Operating System / through a docker container, make sure the dbus is shared with the container running Home Assistant. This is typically done by adding the following line in your docker run command:
-`-v /var/run/dbus/:/var/run/dbus/:ro`
-or the following lines in your docker-compose file:
-```
-    volumes:
-      - /var/run/dbus/:/var/run/dbus/:ro
-```
-
-## Parameters
-Option | Type | Required | Description
+## 配置说明
+配置项 | 类型 | 必填项 | 说明
 --- | --- | --- | ---
-HCI_DEV | string | No | Bluetooth hci device to use. Defaults to `hci0`
-BLUEPY_PASSIVE_SCAN | bool | No | Try to set to true if getting an error like `Bluetooth connection error: Failed to execute management command ‘le on’` on a Raspberry Pi. Defaults to `false`
-MISCALE_MAC | string | Yes | MAC address of your scale
-MQTT_PREFIX | string | No | MQTT topic prefix, defaults to `miscale`
-MQTT_HOST | string | Yes | MQTT server, defaults to `127.0.0.1`
-MQTT_USERNAME | string | No | Username for MQTT server (comment out if not required)
-MQTT_PASSWORD | string | No | Password for MQTT (comment out if not required)
-MQTT_PORT | int | No | Port of your MQTT server, defaults to 1883
-MQTT_DISCOVERY | bool | No | Whether you want MQTT discovery for Home Assistant, defaults to `true`
-MQTT_DISCOVERY_PREFIX | string | No | MQTT discovery prefix for Home Assistant, defaults to `homeassistant`
-DEBUG_LEVEL | string | No | Logging level. Possible values: 'CRITICAL', 'ERROR', 'WARNING', 'INFO', 'DEBUG'. Defaults to 'INFO'
-USERS | List | Yes | List of users to add, see below
+HCI_DEV | string | 否 | 蓝牙地址。默认为 `hci0` 
+BLUEPY_PASSIVE_SCAN | bool | 否 | 如果像在 Raspberry Pi 上出现错误 `Bluetooth connection error: Failed to execute management command ‘le on’` ，请尝试设置为 true。默认为  `false` 
+MISCALE_MAC | string | 是 | 秤的 MAC 地址 
+MQTT_PREFIX | string | 否 | MQTT 主题前缀，默认为`miscale` 
+MQTT_HOST | string | 是 | MQTT 服务器，默认为`127.0.0.1` 
+MQTT_USERNAME | string | 否 | MQTT 服务器的用户名（如果不需要，则注释掉） 
+MQTT_PASSWORD | string | 否 | MQTT 服务器的密码（如果不需要，则注释掉） 
+MQTT_PORT | int | 否 | MQTT 服务器的端口，默认为 1883 
+MQTT_DISCOVERY | bool | 否 | 是否要 Home Assistant 的 MQTT 发现，默认为 `true` 
+MQTT_DISCOVERY_PREFIX | string | 否 | Home Assistant 的 MQTT 发现前缀，默认为 `homeassistant` 
+DEBUG_LEVEL | string | 否 | 日志记录级别。可能的值：`CRITICAL`、`ERROR`、`WARNING`、`INFO`、`DEBUG`，默认为`INFO` 
+USERS | List | 是 | 要添加的用户列表，请参见下文 
 
 
-Auto-gender selection/config: this is used to create the calculations such as BMI, Water/Bone Mass, etc.
-Here is the logic used to assign a measured weight to a user:
-- If the weight is within the range of a user's defined values for GT and LT, then it will be assigned (published) to that user.
-- If the weight matches two separate user ranges, it will only be assigned to the first user that matched. So don't create overlapping ranges!
+自动性别选择/配置：用于创建计算，例如 BMI、水/骨量等。以下是用于为用户分配测量权重的逻辑：
+- 如果权重在用户定义的 GT 和 LT 值范围内，则会将其分配（发布）给该用户。
+- 如果权重与两个单独的用户范围匹配，则只会将其分配给匹配的第一个用户。所以不要创建重叠的范围！
 
-User Option | Type | Required | Description
+用户选项 | 类型 | 必填项 | 说明 
 --- | --- | --- | ---
-GT | int | Yes | Greater Than - Weight must be greater than this value; this will be the lower limit for the weight range of the user
-LT | int | Yes | Less Than - Weight must be less than this value; this will be the upper limit for the weight range of the user
-SEX | string | Yes | Gender of the user (male / female)
-NAME | string | Yes | Name of the user
-HEIGHT | int | Yes | Height (in cm) of the user
-DOB | string | Yes | Date of Birth of the user (in yyyy-mm-dd format)
+GT | int | 是 | 大于 - 权重必须大于此值;这将是用户体重范围的下限 
+LT | int | 是 | 小于 - 重量必须小于此值;这将是用户体重范围的上限 
+SEX | string | 是 | 用户的性别（男/女） 
+NAME | string | 是 | 用户名称 
+HEIGHT | int | 是 | 用户的身高（厘米） 
+DOB | string | 是 | 用户的出生日期（格式 yyyy-mm-dd ） 
 
-Note: the weight definitions must be in the same unit as the scale (kg, Lbs, or jin).
+注意：重量定义必须与体重秤的单位相同（kg、Lbs 或 jin）。
 
 
-# Home Assistant Setup
-In the `mqtt:` block, enter as many blocks as users configured in your environment variables.
-If you already have an `mqtt:` and/or `sensor:` block, do not create another one but simply add the "missing" bits under the relevant block header.
-Note: Only weight entities are automatically added via the MQTT discovery.
+## configuration.yaml配置
+在块中 `mqtt:` ，输入与环境变量中配置的用户数一样多的块。如果您已经有一个 `mqtt:` and/or `sensor:` 块，请不要创建另一个块，而只需在相关块头下添加“缺失”位。注意：只有权重实体才会通过 MQTT 发现自动添加。
 
 
 ```yaml
@@ -92,9 +67,6 @@ mqtt:
      state_class: "measurement"
 ```
 
-<img align="center" alt="Example of the Lovelace card in HA" src="https://raw.githubusercontent.com/lolouk44/xiaomi_mi_scale/master/Screenshots/HA_Lovelace_Card.png" width="250"> 🠲 <img align="center" alt="Example of the details of the Lovelace card in HA" src="https://raw.githubusercontent.com/lolouk44/xiaomi_mi_scale/master/Screenshots/HA_Lovelace_Card_Details.png" width="250">
+<img align="center" alt="Example of the Lovelace card in HA" src="https://raw.githubusercontent.com/lolouk44/xiaomi_mi_scale/master/Screenshots/HA_Lovelace_Card.png" width="250"> 
 
-
-
-# Acknowledgements
-Thanks to @syssi (https://gist.github.com/syssi/4108a54877406dc231d95514e538bde9) and @prototux (https://github.com/wiecosystem/Bluetooth) for their initial code. Special thanks to [@ned-kelly](https://github.com/ned-kelly) for his help turning a "simple" Python script into a fully fledged Docker container. Thanks to [@bpaulin](https://github.com/bpaulin), [@fabir-git](https://github.com/fabir-git), [@snozzley](https://github.com/snozzley), [CodeFinder2](https://github.com/CodeFinder2) [@MariusHerget](https://github.com/MariusHerget) for their PRs and collaboration.
+<img align="center" alt="Example of the details of the Lovelace card in HA" src="https://raw.githubusercontent.com/lolouk44/xiaomi_mi_scale/master/Screenshots/HA_Lovelace_Card_Details.png" width="250"> 

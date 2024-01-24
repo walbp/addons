@@ -1,11 +1,8 @@
-# 冬瓜甄选addons: Nextcloud
+# 冬瓜甄选addons：Nextcloud
 
-## About
+## 关于
 
 nextcloud个人专属或团队共享的私有云同步网盘，该版本在原版nextcloud中增加了Home assistant的优化调整和配置选项。
-
-原始版本来源 : https://github.com/haberda/hassio_addons
-这个加载项基于 linuxserver.io中[docker image](https://github.com/linuxserver/docker-nextcloud) 。
 
 ### 使用mariadb 作为主要的数据库 (感谢@amaciuc)
 
@@ -37,4 +34,7 @@ If you use clients for file syncing, the use of SQLite is highly discouraged.
 - 4、进入web并填写所有必需的信息。下面是一个例子:
 
 ![image](https://raw.gitcode.com/waxgourd/addons/files/master/nextcloud/images/nextcloud-1.png)
+## 来源
 
+原始版来源：https://github.com/haberda/hassio_addons
+加载项基于：https://github.com/linuxserver/docker-nextcloud

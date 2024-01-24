@@ -1,10 +1,10 @@
-# 冬瓜甄选addons:MyIP
+# 冬瓜甄选addons：MyIP
 
 ## 关于
 
 将该IP工具改用Web版，集成到HA中。
 
-## 👀 主要功能
+### 👀 主要功能
 
 - 🖥️ **看自己的 IP**：从多个 IPv4 和 IPv6 来源检测显示本机的 IP
 - 🕵️ **看 IP 信息**：显示所有 IP 的相关信息，包括国家、地区、ASN、地理位置等
@@ -23,4 +23,3 @@
 ## 来源
 
 https://github.com/jason5ng32/MyIP/
-
