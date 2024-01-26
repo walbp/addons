@@ -9,7 +9,7 @@ arch:
   - amd64
 hassio_api: true
 host_network: true
-image: xyyyhtl/v2raya
+image: docker.nju.edu.cn/xyyyhtl/v2raya
 init: false
 boot: manual
 map:
