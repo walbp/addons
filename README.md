@@ -93,3 +93,9 @@ autMan是个扩展性极强的工具
 
 &#10003;  [imaotai](imaotai/) : 
 i茅台app接口自动化挂机预约。
+
+&#10003;  [Netdata](netdata/) : 
+Netdata每秒收集指标，并将其显示在漂亮的低延迟仪表板中。
+
+&#10003;  [Sun Panel](sun-panel/) : 
+一个服务器、NAS导航面板、Homepage、浏览器首页。
