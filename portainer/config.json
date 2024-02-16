@@ -10,6 +10,9 @@
   ],
   "codenotary": "wghaos@163.com",
   "description": "轻松管理您的Docker环境",
+  "startup": "system",
+  "boot": "manual",
+  "host_network": true,
   "docker_api": true,
   "hassio_api": true,
   "image": "ghcr.nju.edu.cn/alexbelgium/portainer-{arch}",
@@ -28,6 +31,12 @@
     "password": "homeassistant",
     "ssl": false
   },
+  "privileged": [
+    "SYS_ADMIN",
+    "DAC_READ_SEARCH"
+  ],
+  "full_access": true,
+  "hassio_role": "admin",
   "panel_icon": "mdi:docker",
   "ports": {
     "8000/tcp": null,
