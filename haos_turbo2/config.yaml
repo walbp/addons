@@ -36,26 +36,8 @@ apparmor: true
 devicetree: false
 options:
   bin_app: v2ray-core
-  tun_config: v1
-  dns_parsing: doh
-  proxy_domains: []
-  direct_domains: []
-  proxy_ipcidr: []
-  direct_ipcidr: []
-  logger_disable : true
   clear_mode: false
 schema:
   bin_app: list(v2ray-core|xray-core)
-  tun_config: list(v1|v2)
-  dns_parsing: list(direct|doh)
-  proxy_domains:
-    - str?
-  direct_domains:
-    - str?
-  proxy_ipcidr:
-    - str?
-  direct_ipcidr:
-    - str?
-  logger_disable: bool
   clear_mode: bool
 startup: services
