@@ -109,6 +109,6 @@
   },
   "slug": "filebrowser",
   "udev": true,
-  "url": "https://github.com/alexbelgium/hassio-addons",
+  "url": "https://gitcode.com/waxgourd/addons",
   "version": "2.23.0_12"
 }

@@ -3,7 +3,7 @@
   "version": "0.3.6",
   "slug": "xiaomi_mi_scale",
   "description": "通过蓝牙（BLE）读取小米体脂秤的测量值",
-  "url": "https://github.com/alexbelgium/hassio-addons",
+  "url": "https://gitcode.com/waxgourd/addons",
   "image": "wghaos/mi-scale",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "application",
@@ -31,7 +31,7 @@
     "DEBUG_LEVEL": "error",
 
     "USERS": [
-        { 
+        {
           "NAME": "Bob",
           "SEX": "male",
           "GT": 60,
@@ -39,7 +39,7 @@
           "HEIGHT": 180,
           "DOB": "1980-01-01"
         },
-        { 
+        {
           "NAME": "Mary",
           "SEX": "female",
           "GT": 40,
@@ -47,7 +47,7 @@
           "HEIGHT": 160,
           "DOB": "1990-01-01"
         },
-        { 
+        {
           "NAME": "Timmy",
           "SEX": "male",
           "GT": 20,
@@ -55,7 +55,7 @@
           "HEIGHT": 120,
           "DOB": "2010-01-01"
         },
-        { 
+        {
           "NAME": "Baby Sally",
           "SEX": "female",
           "GT": 1,
@@ -83,7 +83,7 @@
     "DEBUG_LEVEL": "str?",
 
     "USERS": [
-      { 
+      {
         "NAME": "str",
         "SEX": "str",
         "GT": "int",

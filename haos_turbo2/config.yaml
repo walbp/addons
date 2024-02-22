@@ -3,7 +3,7 @@ version: v2.2.4.6-6
 slug: haos_turbo2
 name: HAOS加速器2
 description: Home Assistant系统加速器2
-url: https://github.com/v2raya/addons
+url: https://github.com/v2raya
 arch:
   - aarch64
   - amd64
