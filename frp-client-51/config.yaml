@@ -33,5 +33,5 @@ schema:
   proxy_name: str
   local_port: int
   custom_domains: str
-  remote_port: int
+  remote_port: int(10000,20000)
   subdomain: str?
