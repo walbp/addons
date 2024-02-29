@@ -2,8 +2,8 @@
 
 ## 配置说明
 
-
 1、 按照实际情况填写相关"配置",自定义二级域名必填。
+
 2、 用File editor修改Home Assistant `configuration.yaml` 最后一行添加：
 
 ```yaml
