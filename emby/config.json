@@ -1,7 +1,8 @@
 {
   "arch": [
     "aarch64",
-    "amd64"
+    "amd64",
+    "armv7"
   ],
   "backup_exclude": [
     "*/cache/",
@@ -120,6 +121,6 @@
   "slug": "emby_nas",
   "udev": true,
   "url": "https://gitcode.com/waxgourd/addons",
-  "version": "4.9.0.1-2",
+  "version": "4.9.0.8",
   "video": true
 }
