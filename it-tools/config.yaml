@@ -2,7 +2,7 @@ name: "IT Tools"
 version: 2023.12.21-5ed3693
 slug: it-tools
 codenotary: wghaos@163.com
-description: '适用于开发人员和IT人员的有用工具。'
+description: '适用于开发人员和IT人员的有用工具'
 url: https://gitcode.com/waxgourd/addons
 image: wghaos/it-tools
 init: false

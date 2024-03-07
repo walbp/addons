@@ -3,7 +3,7 @@
   "version": "1.8.8",
   "slug": "emulatorjs-zh",
   "codenotary": "wghaos@163.com",
-  "description": "基于web浏览器的模拟器，己移植众多复古游戏机。它是Libretro和EmulatorJS之间混合使用模拟器。",
+  "description": "基于web浏览器的模拟器，己移植众多复古游戏机。它是Libretro和EmulatorJS之间混合使用模拟器",
   "url": "https://gitcode.com/waxgourd/addons",
   "arch": [
     "aarch64",
