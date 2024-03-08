@@ -1,5 +1,7 @@
-# 冬瓜甄选addons：addon-data-migrate
+# 冬瓜甄选addons：addon数据迁移工具
 
 ## 关于
 
-addon-data-migrate 基于HA相同版本的组件在不同仓库之间的数据迁移。
+addon数据迁移工具主要是为了解决克隆或者镜像addon中的数据迁移一直使用手工处理的问题。
+
+迁移要保证addon的版本相同。
