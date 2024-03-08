@@ -79,39 +79,54 @@ HA加速器
 AList是一个支持多种存储，支持网页浏览和 WebDAV 的文件列表程序，由 gin 和 Solidjs 驱动。
 
 &#10003;  [HA健康检测](boost/) : 
+
 这是一款HAOS综合网络访问健康度检查的应用，具有运行状态、网络状态、网络响应检测等功能。
 
 &#10003; [onelist](onelist/) :
+
 一个类似emby的专注于刮削alist聚合网盘形成影视媒体库的程序。
 
 &#10003;  [autMan](autman/) : 
+
 autMan是个扩展性极强的工具
 这是一款功能强大的自动化软件系统，它支持多语言插件、多脚本运行、返利功能、与即时通讯平台的对接，以及自定义微服务路由。这使其适用于各种自动化任务和定制功能的开发。
 
 &#10003;  [OneNav](onenav/) : 
+
 使用PHP + SQLite 3开发的书签管理系统，将浏览器书签集中式管理，做到一处部署，随处访问。
 
 &#10003;  [imaotai](imaotai/) : 
 i茅台app接口自动化挂机预约。
 
 &#10003;  [Netdata](netdata/) : 
+
 Netdata每秒收集指标，并将其显示在漂亮的低延迟仪表板中。
 
 &#10003;  [Sun Panel](sun-panel/) : 
+
 一个服务器、NAS导航面板、Homepage、浏览器首页。
 
 &#10003;  [IT Tools](it-tools/) : 
+
 适用于开发人员和IT人员的有用工具。
 
 &#10003;  [Portainer汉化版](Portainer汉化版) : 
+
 这是一个很有名的docker可视化界面的管理工具。此版本为汉化版。
 
 &#10003;  [游戏机模拟器](emulatorjs-zh/) : 
+
 基本Web浏览器的怀旧游戏机模拟器。
 
 &#10003;  [docker日志监控Dozzle](docker日志监控dozzle/) : 
+
 这是一个小型轻量级应用程序，具有基于 Web 的界面来监控 Docker 日志。
 
 &#10003;  [frp客户端V0.51.0](frp-client-51/) : 
+
+相同版本的组件在不同仓库中的数据迁移。
+
+&#10003;  [Addon Data Migrate](addon-data-migrate/) : 
+
 相同版本的组件在不同仓库中的数据迁移。
 
