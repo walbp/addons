@@ -96,6 +96,7 @@ autMan是个扩展性极强的工具
 使用PHP + SQLite 3开发的书签管理系统，将浏览器书签集中式管理，做到一处部署，随处访问。
 
 &#10003;  [imaotai](imaotai/) : 
+
 i茅台app接口自动化挂机预约。
 
 &#10003;  [Netdata](netdata/) : 
