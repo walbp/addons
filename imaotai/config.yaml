@@ -18,3 +18,4 @@ options:
 schema:
   db_user: str
   db_pass: str
+boot: manual

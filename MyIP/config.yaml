@@ -20,3 +20,4 @@ image: jason5ng32/myip
 webui: "[PROTO:http]://[HOST]:[PORT:18966]"
 ports:
   18966/tcp: 18966
+boot: manual

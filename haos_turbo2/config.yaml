@@ -1,5 +1,5 @@
 ---
-version: v2.2.4.6-6
+version: 2.2.5.1
 slug: haos_turbo2
 name: HAOS加速器2
 description: Home Assistant系统加速器2
@@ -7,9 +7,10 @@ url: https://github.com/v2raya
 arch:
   - aarch64
   - amd64
+  - armv7
 hassio_api: true
 host_network: true
-image: docker.nju.edu.cn/xyyyhtl/v2raya
+image: xyyyhtl/haos-turbo2
 init: false
 boot: manual
 map:

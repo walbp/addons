@@ -1,4 +1,4 @@
-# FRP Client v0.51.0
+# FRP Client 0.51.0
 
 ## 配置说明
 

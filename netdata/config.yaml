@@ -1,5 +1,5 @@
 name: Netdata
-version: v1.44.1
+version: 1.45
 slug: netdata
 codenotary: wghaos@163.com
 description: 'Netdata每秒收集指标，并将其显示在漂亮的低延迟仪表板中'
@@ -9,7 +9,7 @@ init: false
 arch:
   - aarch64
   - amd64
-host_network: false
+  - armv7
 privileged:
   - SYS_ADMIN
   - SYS_PTRACE
@@ -22,3 +22,4 @@ ports:
   19999/tcp: 19999
 ports_description:
   19999/tcp: Web interface
+boot: manual

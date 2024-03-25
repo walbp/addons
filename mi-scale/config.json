@@ -7,7 +7,7 @@
   "image": "wghaos/mi-scale",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "application",
-  "boot": "auto",
+  "boot": "manual",
   "host_dbus": true,
   "panel_admin": false,
   "host_network": true,

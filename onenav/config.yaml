@@ -1,10 +1,20 @@
+name: OneNav
+version: 0.9.34
+slug: onenav
+codenotary: wghaos@163.com
+description: '可帮助你将浏览器书签集中式管理'
+url: https://gitcode.com/waxgourd/addons
+image: wghaos/onenav
+init: false
 arch:
   - aarch64
   - amd64
+  - armv7
+webui: "http://[HOST]:[PORT:8880]/"
+ports:
+  '80': 8880
 backup_exclude:
   - '*/data/'
-codenotary: wghaos@163.com
-description: '可帮助你将浏览器书签集中式管理'
 devices:
   - /dev/dri
   - /dev/dri/card0
@@ -20,23 +30,12 @@ devices:
   - /dev/mmcblk
   - /dev/fuse
   - /dev/net/tun
-host_network: false
 ingress: false
 ingress_stream: false
-init: false
-name: OneNav
 panel_icon: mdi:network
-ports:
-  '80': 8880
-webui: "http://[HOST]:[PORT:8880]/"
 privileged:
   - SYS_ADMIN
   - DAC_READ_SEARCH
-slug: onenav
 startup: services
-boot: auto
-url: https://gitcode.com/waxgourd/addons
-image: docker.nju.edu.cn/wghaos/onenav
-version: v0.9.34
+boot: manual
 apparmor: true
-

@@ -1,5 +1,5 @@
 name: Addon数据迁移工具
-version: v0.2.1
+version: 0.2.1
 slug: addonDataMigrate
 codenotary: wghaos@163.com
 description: '解决不同仓库中addons的数据迁移'
@@ -9,6 +9,7 @@ init: false
 arch:
   - aarch64
   - amd64
+  - armv7
 ingress: true
 ingress_port: 80
 map:
@@ -17,3 +18,4 @@ map:
 apparmor: false
 docker_api: true
 startup: services
+boot: manual

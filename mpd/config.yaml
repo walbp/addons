@@ -41,3 +41,4 @@ schema:
   httpd_output: bool
   verbose: bool?
   custom_config: match(/share/mpd/.+)?
+boot: manual

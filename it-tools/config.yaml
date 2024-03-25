@@ -17,3 +17,4 @@ ports:
   3210/tcp: 3210
 ports_description:
   3210/tcp: Web interface
+boot: manual

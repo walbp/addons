@@ -150,5 +150,6 @@
   "udev": true,
   "url": "https://gitcode.com/waxgourd/addons",
   "version": "28.0.3",
-  "webui": "https://[HOST]:[PORT:443]"
+  "webui": "https://[HOST]:[PORT:443]",
+  "boot": "manual"
 }

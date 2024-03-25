@@ -1,6 +1,6 @@
 name: Onelist
 slug: onelist
-version: v2.0.5
+version: 2.0.5
 description: '专注于刮削alist聚合网盘形成影视媒体库的程序'
 url: https://gitcode.com/waxgourd/addons
 codenotary: wghaos@163.com
@@ -8,6 +8,7 @@ image: wghaos/onelist
 arch:
   - aarch64
   - amd64
+  - armv7
 backup_exclude:
   - '*/data/'
 devices:
@@ -27,9 +28,8 @@ devices:
   - /dev/net/tun
 apparmor: true
 init: false
-boot: auto
+boot: manual
 startup: application
-host_network: false
 privileged:
   - SYS_ADMIN
   - DAC_READ_SEARCH
