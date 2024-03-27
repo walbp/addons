@@ -1,8 +1,8 @@
 ---
 version: 2.2.5.1
 slug: haos_turbo
-name: HAOS加速器
-description: Home Assistant系统加速器
+name: HAOS加速器(首选)
+description: Home Assistant系统加速器，支持科学 上网，首选使用
 url: https://github.com/v2raya
 arch:
   - aarch64
@@ -38,7 +38,7 @@ devicetree: false
 options:
   bin_app: v2ray-core
   tun_config: v1
-  dns_parsing: direct
+  dns_parsing: doh
   proxy_domains: []
   direct_domains: []
   proxy_ipcidr: []
