@@ -1,0 +1,30 @@
+---
+configuration:
+  alipan_token:
+    name: 阿里云盘token
+    description: >-
+      阿里云盘token。
+  alipan_folder_id:
+    name: 阿里云盘folderid
+    description: >-
+      阿里云盘folderid。
+  alipan_refresh_token:
+    name: 阿里云盘刷新令牌
+    description: >-
+      阿里云盘刷新令牌。
+  pikpak_email:
+    name: pikpak邮箱
+    description: >-
+      pikpak 邮箱地址。
+  pikpak_mobile:
+    name: pikpak手机号码
+    description: >-
+      pikpak 手机号码。
+  docker_address_ext:
+    name: docker地址文本
+    description: >-
+      docker 地址文本。
+  proxy:
+    name: 代理
+    description: >-
+      代理。
