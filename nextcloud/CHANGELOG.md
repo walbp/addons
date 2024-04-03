@@ -1,4 +1,6 @@
 
+## 28.0.4 (30-03-2024)
+- 升级到linuxserver/docker-nextcloud最新版本
 ## 28.0.3 (02-03-2024)
 - 升级到linuxserver/docker-nextcloud最新版本
 ## 28.0.2 (02-02-2024)
