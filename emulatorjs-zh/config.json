@@ -1,6 +1,6 @@
 {
   "name": "游戏机模拟器",
-  "version": "1.8.9",
+  "version": "1.9.0",
   "slug": "emulatorjs-zh",
   "codenotary": "wghaos@163.com",
   "description": "基于web浏览器的模拟器，己移植众多复古游戏机。它是Libretro和EmulatorJS之间混合使用模拟器",

@@ -110,7 +110,7 @@
   },
   "slug": "filebrowser",
   "url": "https://gitcode.com/waxgourd/addons",
-  "version": "2.23.0_12",
+  "version": "2.23.0_13",
   "udev": true,
   "boot": "manual"
 }

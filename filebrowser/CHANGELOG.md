@@ -1,3 +1,6 @@
+### 2.23.0_13 (06-04-2024)
+- 允许mdadm raid(感谢 @zagi988)
+
 ### 2.23.0_12 (08-01-2024)
 - 修复了一些小的bug
 - 修正: https://github.com/alexbelgium/hassio-addons/issues/1163
