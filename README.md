@@ -125,9 +125,24 @@ Netdata每秒收集指标，并将其显示在漂亮的低延迟仪表板中。
 
 &#10003;  [frp客户端V0.51.0](frp-client-51/) : 
 
-相同版本的组件在不同仓库中的数据迁移。
+FRP客户端。
 
 &#10003;  [Addon Data Migrate](addon-data-migrate/) : 
 
 相同版本的组件在不同仓库中的数据迁移。
 
+&#10003;  [Lucky](lucky/) : 
+
+具有动态域名、Web服务、内网穿透、等服务器。
+
+&#10003;  [HA清理大师](addon-data-clean/) : 
+
+一个专门为HAOS清理垃圾数据的工具，让HA也能直观的进行存储规划。
+
+&#10003;  [小雅Alist](xiaoya-alist/) : 
+
+一个口碑级的alist应用。
+
+&#10003;  [冬瓜HAOS-ttyd](wg-ttyd/) : 
+
+可以将ttyd在HA内嵌的方式打开，方便大家远程时操作。
