@@ -1,3 +1,6 @@
+### 2.23.0_14 (21-04-2024)
+修复：允许缺少旧文件夹（addons_config和addons_autoscripts）
+
 ### 2.23.0_13 (06-04-2024)
 - 允许mdadm raid(感谢 @zagi988)
 
