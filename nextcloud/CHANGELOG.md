@@ -1,4 +1,7 @@
-
+## 29.0.0 (27-04-2024)
+- 升级到linuxserver/docker-nextcloud最新版本
+- 为 BMP GIF HEIC JPEG Krita PNG XBitmap 添加预览支持
+- 检查是否设置了维护窗口启动（maintenance_window_start），或使用 1 作为默认值，对应于凌晨 1-5 点
 ## 28.0.4 (30-03-2024)
 - 升级到linuxserver/docker-nextcloud最新版本
 ## 28.0.3 (02-03-2024)
