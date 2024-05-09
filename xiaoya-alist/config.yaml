@@ -1,5 +1,5 @@
 name: 小雅Alist
-version: hostmode-1
+version: hostmode-2
 slug: xiaoya-alist
 codenotary: wghaos@163.com
 description: '一个口碑级的alist应用'
@@ -23,6 +23,7 @@ options:
   alipan_token: ""
   alipan_refresh_token: ""
   alipan_folder_id: ""
+  cron: "20 05 * * *"
   pikpak_email: ""
   pikpak_mobile: ""
   docker_address_ext: ""
@@ -31,6 +32,7 @@ schema:
   alipan_token: str
   alipan_refresh_token: str
   alipan_folder_id: str
+  cron: str?
   pikpak_email: str?
   pikpak_mobile: str?
   docker_address_ext: str?

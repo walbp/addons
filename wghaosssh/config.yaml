@@ -1,5 +1,5 @@
 name: "WGHAOS SSH 配置器"
-version: '0.2.2'
+version: '0.2.3'
 slug: 'wghaosssh'
 codenotary: wghaos@163.com
 description: '这将启用端口22222上的SSH WGHassOS控制台。仅适用于Home Assistant操作系统'

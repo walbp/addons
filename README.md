@@ -26,10 +26,6 @@ https://gitcode.com/waxgourd/addons
 
 可以充当轻量级NAS的samba，与一般的samba区别在于，可以在挂载硬盘，可以配置支持网卡。
 
-&#10003;  [NeteaseCloudMusicApi](NeteaseCloudMusicApi/) : 
-
-网易云音乐 Node.js API service。
-
 &#10003;  [filebrowser](filebrowser/) : 
 
 filebrowser提供指定目录下的文件管理界面，可用于上传、删除、预览、重命名和编辑文件。
