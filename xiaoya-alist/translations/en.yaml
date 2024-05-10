@@ -31,4 +31,4 @@ configuration:
   cron:
     name: Timed cleaning settings
     description: >-
-      Time division, day, month, week: If you do not understand the cron format, please do not modify it!!! Default daily cache cleaning and check-in at 5:20 am¡£Set to empty, do not start scheduled cleaning
+      Time division, day, month, week: If you do not understand the cron format, please do not modify it!!! Default daily cache cleaning and check-in at 5:20 amã€‚Set to empty, do not start scheduled cleaning
