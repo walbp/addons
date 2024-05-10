@@ -28,3 +28,7 @@ configuration:
     name: 代理
     description: >-
       代理。
+  cron:
+    name: 定时清理设置
+    description: >-
+      分 时 天 月 周：如果不懂cron格式，请勿修改！！！默认每天5点20清理缓存和签到，设置为空，则不启动定时清理

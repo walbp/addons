@@ -1,101 +1,41 @@
 # Frigate-rknpu版
 
-## 使用方法：
+## 准备工作
 
-需要在 /mnt/data/supervisor/homeassistant/ 下面添加配置文件frigate.yaml
+1、确保系统为启用RKNN功能的冬瓜版HAOS 12.3或以上版本。
 
-可以：
-- 方法一：进入 [ip]:7681 导航到指定位置，使用命令行工具添加编辑frigate.yaml
-- 方法二：使用 File editor 或者 Filebrowser(推荐) 添加编辑frigate.yaml
+​      包含机型：
 
-```yaml
-mqtt:
-  enabled: false
+- Green（支持RKNN功能的硬件代号为ngreen）
+- panther-x2(从12.3开始为默认开启RKNN，直接升级即可)
+- X88pro20（从OS12.3开始，默认开启RKNN，硬件代号nx88pro20）
 
-detectors:
-  rknn_k:
-    type: rknn
-  #cpu2:
-  #  type: cpu
-  #  num_threads: 3
-  #ov:
-  #  type: openvino
-  #  device: AUTO
-  #  model:
-  #    path: /openvino-model/ssdlite_mobilenet_v2.xml
-model:
-  width: 320
-  height: 320
-  input_tensor: nhwc
-  input_pixel_format: bgr
-  #path: default-yolov8n
-  #labelmap_path: /openvino-model/coco_91cl_bkgr.txt
+2、目前仅支持瑞芯微RK3566及以上CPU（支持RKNN功能的）。
 
-ffmpeg:
-  input_args: preset-rtsp-restream
-  hwaccel_args: preset-rk-h264
-  output_args:
-        record: preset-record-generic-audio-aac
+   注：此版本只测过冬瓜HAOS下使用，其它未测试过。
 
-#go2rtc:
-#  streams:
-#    frontdoor:
-#      - ffmpeg:rtsp://your-rtsp/Streaming/Channels/101
+3、确认摄像头支持rtsp。
 
-#注意：下面的path后是要改成自己摄像头rtsp链接的。
 
-cameras:
-  wga-door:
-    ffmpeg:
-      inputs:
-        - path: rtsp://your-rtsp/Streaming/Channels/101
-          roles:
-            - detect
-detect:
-  width: 1280
-  height: 720
-  fps: 6
-  enabled: True
 
-objects:
-  track:
-    - person
-  filters:
-    person:
-      min_score: 0.2
+## 使用方法
 
-snapshots:
-  enabled: true
-  bounding_box: true
-  clean_copy: true
-  retain:
-    default: 15
+1、进入冬瓜版HAOS >  配置 > 加载项 > 加载项商店 > Add-ons by waxgourd，安装**frigate-rknpu**（容量较大，请耐心等待）。
 
-record:
-  enabled: true
-  expire_interval: 60
-  retain:
-    days: 0
-    mode: active_objects
-  events:
-    pre_capture: 3
-    post_capture: 3
-    objects:
-      - person
-    retain:
-      mode: active_objects
-      objects:
-        person: 15
-      default: 2
+2、**frigate-rknpu**的信息页面中关闭**保护模式**并**启动**。
 
-#这里是日志输出设置，请根据情况自行设置
+3、正常启动则可以在**信息**页面中**打开 WEB UI**。
 
-logger:
-  default: debug
-  logs:
-    ffmpeg.wga-door.detect: debug
-    detect: debug
-```
+4、进入**FRIGATE**内找到**CONFIG**，按照注释更改信息。
 
-更多配置参考：https://docs.frigate.video/configuration/
+a、如果不需要开启`mqtt`则不需要更改该配置。如安装的是**mosquitto**，只需要将`enabled`改为`true`，填写mosquitto设置的用户名和密码即可。
 
+b、找到`cameras`下的`path`配置项，将后面的地址改为你摄像头的地址。多摄像添加格式按照提示进行配置，建议不要超过四个。太多会影响HA的性能。
+
+​	格式：rtsp://{账号}:{密码}@{IP地址}:554/Streaming/Channels/{通道号}
+
+​	例如：rtsp://rtsp:123456@192.168.68.148:554/Streaming/Channels/101
+
+5、编辑完成后点击**SAVE & RESTART**保存并重启。注：他自己不能重启，只能进入页面再次点击**启动**。再次进入则可以看到图像了。
+
+6、解锁更多玩法请查看[官方网站](https://docs.frigate.video/)

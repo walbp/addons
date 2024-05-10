@@ -1,5 +1,5 @@
 name: frigate-rknpu
-version: rknn1.6-13.2-preview
+version: rknn1.6-13.2-2-preview
 slug: 'frigate-rknpu'
 codenotary: 'wghaos@163.com'
 description: NVR with realtime local object detection for IP cameras
@@ -9,7 +9,6 @@ init: false
 startup: application
 boot: manual
 arch:
-  - amd64
   - aarch64
 map:
   - "media:rw"
@@ -39,21 +38,6 @@ ports_description:
   1984/tcp: go2rtc API
   1935/tcp: RTMP streams
 host_network: false
-devices:
-  - /dev/dri/renderD128
-  - /dev/dri/renderD129
-  - /dev/dri/renderD130
-  - /dev/apex_0
-  - /dev/apex_1
-  - /dev/apex_2
-  - /dev/apex_3
-  - /dev/dri/card0
-  - /dev/dri/card1
-  - /dev/dri/card2
-  - /dev/vchiq
-  - /dev/video10
-  - /dev/video0
-usb: true
 video: true
 tmpfs: true
 host_ipc: true
