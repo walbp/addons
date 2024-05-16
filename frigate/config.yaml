@@ -1,5 +1,5 @@
 name: frigate-rknpu
-version: rknn1.6-13.2-2-preview
+version: rknn1.6-13.2-3
 slug: 'frigate-rknpu'
 codenotary: 'wghaos@163.com'
 description: NVR with realtime local object detection for IP cameras
@@ -23,6 +23,7 @@ panel_title: Frigate
 panel_admin: false
 homeassistant_api: true
 hassio_api: true
+hassio_role: manager
 ports:
   8555/tcp: 8555
   8555/udp: 8555
