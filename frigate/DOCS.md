@@ -8,7 +8,7 @@
 
 - Green（支持RKNN功能的硬件代号为ngreen）
 - panther-x2(从12.3开始为默认开启RKNN，直接升级即可)
-- X88pro20（从OS12.3开始，默认开启RKNN，硬件代号nx88pro20）
+- X88pro20（从OS12.3开始，默认开启RKNN，硬件代号x88pro20）
 
 2、目前仅支持瑞芯微RK3566及以上CPU（支持RKNN功能的）。
 
@@ -38,4 +38,14 @@ b、找到`cameras`下的`path`配置项，将后面的地址改为你摄像头�
 
 5、编辑完成后点击**SAVE & RESTART**保存并重启。注：他自己不能重启，只能进入页面再次点击**启动**。再次进入则可以看到图像了。
 
-6、解锁更多玩法请查看[官方网站](https://docs.frigate.video/)
+
+
+## 其他技巧
+
+### 1、人体识别存储保留周期
+
+a、在**Config**中找到**record** > **events** > **retain** > **objects** > **person**，**person**的值就是触发报警后的存储周期，默认为15天。
+
+
+
+解锁更多玩法请查看[官方网站](https://docs.frigate.video/)
