@@ -1,5 +1,5 @@
 ---
-version: 2.2.5.1
+version: 2.2.5.1-2
 slug: haos_turbo
 name: HAOS加速器
 description: Home Assistant系统加速器，支持科学 上网，首选使用

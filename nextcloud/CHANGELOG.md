@@ -1,3 +1,5 @@
+## 29.0.1 (01-06-2024)
+- 升级到linuxserver/docker-nextcloud最新版本
 ## 29.0.0 (27-04-2024)
 - 升级到linuxserver/docker-nextcloud最新版本
 - 为 BMP GIF HEIC JPEG Krita PNG XBitmap 添加预览支持

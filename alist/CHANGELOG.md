@@ -1,3 +1,23 @@
+### 3.35.0 （2024-06-03）
+🚀 特征
+ - 添加对网易音乐驱动程序的支持
+ - 添加对thunderX驱动程序的支持
+ - 为139Yun Alias AList V3添加proxy_range选项
+ - 添加对lark驱动程序的支持
+ - alias：4cn支持重命名和删除
+ - alist_v3：可选将UA传递到上游远程
+ - mega:添加2FA支持
+ - s3:服务器支持生成的url请求
+
+🐞 漏洞修补
+ - Pikpak captcha_required
+ - 将百灵鸟添加到windows目标
+ - 189pc:FamilyID范围溢出
+ - 百度：自定义上传部件尺寸未知类型
+ - mopan：升级版本
+ - sftp：当连接断开时重新连接到服务器
+ - test：确保setupStorages执行一次
+
 ### 3.34.0 （2024-05-06）
 🚀 特征
  - 添加访问令牌
