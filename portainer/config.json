@@ -15,7 +15,7 @@
   "host_network": true,
   "docker_api": true,
   "hassio_api": true,
-  "image": "ghcr.nju.edu.cn/alexbelgium/portainer-{arch}",
+  "image": "ghcr.fastgh.com/alexbelgium/portainer-{arch}",
   "ingress": true,
   "ingress_port": 1337,
   "ingress_stream": true,
