@@ -10,7 +10,7 @@ arch:
   - armv7
 hassio_api: true
 host_network: true
-image: xyyyhtl/haos-turbo2
+image: docker.fastgh.com/xyyyhtl/haos-turbo2
 init: false
 boot: manual
 map:
