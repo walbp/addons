@@ -149,7 +149,7 @@
   "uart": true,
   "udev": true,
   "url": "https://gitcode.com/waxgourd/addons",
-  "version": "29.0.1",
+  "version": "29.0.3",
   "webui": "https://[HOST]:[PORT:443]",
   "boot": "manual"
 }
