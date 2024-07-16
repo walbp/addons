@@ -1,3 +1,9 @@
+### 2.10.8 (2024-07-15)
+
+1. DDNS和ACME模块 新增支持deSEC、NameSilo和帝恩爱斯-DNSLA的。
+2. 修复了Webhook中未知变量被替换为空的问题。
+3. 修复了DDNS模块上一版本可能未能及时更新记录的问题。
+
 ### 2.10.5 (2024-06-26)
 
 1. DDNS、ACME新增支持DnsPod.COM（国际版）、火山引擎、Vercel、Dynadot
