@@ -1,6 +1,6 @@
 {
   "name": "Xiaomi Mi Scale",
-  "version": "0.3.6",
+  "version": "0.3.6-1",
   "slug": "xiaomi_mi_scale",
   "description": "通过蓝牙（BLE）读取小米体脂秤的测量值",
   "url": "https://gitcode.com/waxgourd/addons",
