@@ -1,3 +1,11 @@
+## 4.9.0.30 (02-09-2024)
+- 从linuxserver/docker-emby更新到最新版本
+## 4.9.0.29 (23-08-2024)
+- 从linuxserver/docker-emby更新到最新版本
+## 4.9.0.28 (27-07-2024)
+- 从linuxserver/docker-emby更新到最新版本
+## 4.9.0.27 (20-07-2024)
+- 从linuxserver/docker-emby更新到最新版本
 ## 4.9.0.26 (01-07-2024)
 - 从linuxserver/docker-emby更新到最新版本
 ## 4.9.0.25 (22-06-2024)

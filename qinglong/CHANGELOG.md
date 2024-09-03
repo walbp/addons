@@ -1,3 +1,9 @@
+### 2.17.9 (2024-07-30)
+
+- Javascript 和 Python 增加内置API QLAPI.notify，使用参考
+- 配置管理增加 task_before.js 和 task_before.py 文件，在执行任务前执行，避免环境变量过大报错
+- 修复执行 JavaScript 和 Python 任务前未执行 task_before.sh
+
 ### 2.17.4（2024-05-17）
 
 - 增加示例脚本

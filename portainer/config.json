@@ -15,7 +15,7 @@
   "host_network": true,
   "docker_api": true,
   "hassio_api": true,
-  "image": "ghcr.fastgh.com/alexbelgium/portainer-{arch}",
+  "image": "m.fashgh.com/alexbelgium/portainer-{arch}",
   "ingress": true,
   "ingress_port": 1337,
   "ingress_stream": true,
@@ -55,5 +55,5 @@
   "slug": "portainer",
   "udev": true,
   "url": "https://gitcode.com/waxgourd/addons",
-  "version": "2.20.1"
+  "version": "2.21.0"
 }

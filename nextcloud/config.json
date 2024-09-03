@@ -80,7 +80,7 @@
     "SKIP_DATA_DIRECTORY_PERMISSION_CHECK": "yes"
   },
   "hassio_api": true,
-  "image": "ghcr.fastgh.com/alexbelgium/nextcloud_ocr-{arch}",
+  "image": "m.fashgh.com/alexbelgium/nextcloud_ocr-{arch}",
   "ingress_port": 0,
   "init": false,
   "map": [
@@ -149,7 +149,7 @@
   "uart": true,
   "udev": true,
   "url": "https://gitcode.com/waxgourd/addons",
-  "version": "29.0.3",
+  "version": "29.0.4-4",
   "webui": "https://[HOST]:[PORT:443]",
   "boot": "manual"
 }

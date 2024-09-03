@@ -1,3 +1,6 @@
+### 2.21.0 (02-09-2024)
+从portaler/portaliner更新到最新版本（更改日志：https://github.com/portainer/portainer/releases)
+
 ### 2.20.1 (13-04-2024)
 从portaler/portaliner更新到最新版本（更改日志：https://github.com/portainer/portainer/releases)
 

@@ -1,6 +1,6 @@
 {
   "name": "Zigbee2MQTT",
-  "version": "1.39.0-1",
+  "version": "1.40.0-1",
   "slug": "zigbee2mqtt",
   "description": "可以自定义ZigBee的接收连接器",
   "uart": true,
@@ -46,7 +46,6 @@
     "serial": {}
   },
   "schema": {
-    "zigbee_herdsman_debug": "bool?",
     "data_path": "str",
     "socat": {
       "enabled": "bool?",
@@ -61,14 +60,16 @@
       "key": "str?",
       "cert": "str?",
       "user": "str?",
-      "password": "str?"
+      "password": "str?",
+      "base_topic": "str?"
     },
     "serial": {
       "port": "str?",
       "adapter": "match(zstack|deconz|zigate|ezsp|ember)?",
       "baudrate": "int?",
       "rtscts": "bool?"
-    }
+    },
+    "watchdog": "str?"
   },
   "image": "zigbee2mqtt/zigbee2mqtt-{arch}"
 }
