@@ -1,5 +1,5 @@
 name: Fusion(仪表板)
-version: 2024.5.3
+version: 2024.7.1
 slug: ha_fusion
 description: Fusion一个现代化、易于使用且性能卓越的自定义Home Assistant仪表板
 arch:
